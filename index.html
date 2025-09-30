@@ -8,30 +8,52 @@
     <script type="module" src="./main.js"></script>
 </head>
 <body>
-    <article>
+    <header class="header">
         <div class="search-music">
-            <input type="text" name="" id="" class="search">
+            <input type="text" name="search" id="">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="user-perfil">
-            <img src="./media/user.png" alt="">
+            <img src="./media/user.png" alt="user">
             <span>Username</span>
         </div>
         <div class="icons">
             <i class="fa-regular fa-bell"></i>
             <i class="fa-solid fa-gear"></i>
         </div>
-    </article>
+    </header>
     <nav class="sidebar">
         <ul>
-            <li><i class="fa-solid fa-house"></i>Home</li>
-            <li><i class="fa-solid fa-music"></i>New music</li>
-            <li><i class="fa-solid fa-compact-disc"></i>Albums</li>
-            <li><i class="fa-solid fa-circle-info"></i>Help</li>
-            <li><i class="fa-solid fa-arrow-right-from-bracket"></i>log out</li>
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-music"></i>
+                <span>New Music</span>
+            </li>
+            <li><i class="fa-solid fa-compact-disc"></i>
+                <span>Albums</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-circle-info"></i>
+                <span>help</span>
+            </li>
         </ul>
+        <div class="sidebar-footer">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Log Out</span>
+        </div>
     </nav>
-    <section class="video-reproduccion"></section>
+    <section class="enunciado">
+          <div class="banner-section">
+            <div class="banner-content">
+                <h2>Explora nuevas canciones que se adapten a tu estado de ánimo</h2>
+                <button class="btn-explore">Explore more!</button>
+            </div>
+        </div>
+
+    </section>
     <div class="container">
         <div class="music-player">
             <nav>
@@ -64,5 +86,22 @@
 
         </div>
     </div>
+    <aside class="playlist-sidebar">
+        <div class="playlist-header">
+            <h2>Mi playlist</h2>
+            <button class="playlist-menu" aria-label="Más opciones">
+                <i class="fa-solid fa-ellipsis"></i>
+            </button>
+        </div>
+        <ul class="playlist-item">
+            <li>
+                <img src="" alt="">
+                <div class="music-info">
+                    <p class="song-name">name music</p>
+                    <p class="artist-name">artist name</p>
+                </div>
+            </li>
+        </ul>
+    </aside>  
 </body>
 </html>
