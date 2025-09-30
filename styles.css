@@ -3,20 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
 
+}
 .music-player {
-    background: yellow;
+    background: rgb(244, 244, 230);
 }
 
 @media (orientation: landscape) and (width >= 800px) and (width <= 1920px){}
 
-@media(orientation: landscape) and (800px <= width <= 1920px) {
-    .music-player{
-        background: red;
-    }
-}
-
 @media(orientation: portrait) {
+    body{display:block;}
+    .header
+    .sidebear
+    .banner-section
+    .playlist-sidebaer{display: none;}
+
+    .enunciado{
+        padding: 0;
+        height: 100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffe0e5;
+    }
+    .music-player{
+        width: 100%;
+        height: 100vh;
+        padding:25px 35px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+
+
+
+
     .music-player{
         width: 100%;
         height: 100vh;
