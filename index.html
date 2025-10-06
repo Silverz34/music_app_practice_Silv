@@ -4,104 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/31871e4437.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
     <script type="module" src="./main.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="search-music">
-            <input type="text" name="search" id="">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="user-perfil">
-            <img src="./media/user.png" alt="user">
-            <span>Username</span>
-        </div>
-        <div class="icons">
-            <i class="fa-regular fa-bell"></i>
-            <i class="fa-solid fa-gear"></i>
-        </div>
-    </header>
-    <nav class="sidebar">
-        <ul>
-            <li>
-                <i class="fa-solid fa-house"></i>
-                <span>Home</span>
-            </li>
-            <li>
-                <i class="fa-solid fa-music"></i>
-                <span>New Music</span>
-            </li>
-            <li><i class="fa-solid fa-compact-disc"></i>
-                <span>Albums</span>
-            </li>
-            <li>
-                <i class="fa-solid fa-circle-info"></i>
-                <span>help</span>
-            </li>
-        </ul>
-        <div class="sidebar-footer">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-            <span>Log Out</span>
-        </div>
-    </nav>
-    <section class="enunciado">
-          <div class="banner-section">
-            <div class="banner-content">
-                <h2>Explora nuevas canciones que se adapten a tu estado de ánimo</h2>
-                <button class="btn-explore">Explore more!</button>
-            </div>
-        </div>
-
-    </section>
-    <div class="container">
-        <div class="music-player">
-            <nav>
-                <div class="circle">
-                    <span>back</span>
+    <div class="main-container">
+        <div class="album-carrusel">
+             <div class="card">
+                <img src="/media/default_img.jpg" alt="Album1">
+                <div class="info">
+                    <p class="titulo">Titulo del album</p>
+                    <p class="artist">Nombre del artista</p>
                 </div>
-                <div class="circle">
-                    <span>bars</span>
+            </div>
+            <div class="card">
+                <img src="/media/default_img.jpg" alt="Album1">
+                <div class="info">
+                    <p class="titulo">Titulo del album</p>
+                    <p class="artist">Nombre del artista</p>
                 </div>
-            </nav>
-
-            <div id="song-details">
-                <img src="./media/default_img.jpg" alt="" id="song-img">
-                <h1 id="title"></h1>
-                <h3 id="artist"></h3>
             </div>
-
-            <div class="audio">
-                <audio controls id="media" hidden>
-                    <!--<source id="audio" src="" type="audio/mpeg">-->
-                </audio>
-                <input type="range" value="0" id="progress">
+            <div class="album-card featured">
+                <img src="/media/default_img.jpg" alt="Album" id="song.img">
+                <div class="album-info">
+                    <h2 id = "titulo">shhhjsj</h2>
+                    <h3 id="artista">jksjasj</h3>
+                </div>
             </div>
-
-            <div class="song-controls">
-                <span id="lastest">last</span>
-                <span id="play" class="play">play</span>
-                <span id="forward">forward</span>
+            <div class="card">
+                <img src="/media/default_img.jpg" alt="Album1">
+                <div class="info">
+                    <p class="titulo">Titulo del album</p>
+                    <p class="artist">Nombre del artista</p>
+                </div>
             </div>
-
-        </div>
+             <div class="card">
+                <img src="/media/default_img.jpg" alt="Album1">
+                <div class="info">
+                    <p class="titulo">Titulo del album</p>
+                    <p class="artist">Nombre del artista</p>
+                </div>
+            </div>
+        </div> 
     </div>
-    <aside class="playlist-sidebar">
-        <div class="playlist-header">
-            <h2>Mi playlist</h2>
-            <button class="playlist-menu" aria-label="Más opciones">
-                <i class="fa-solid fa-ellipsis"></i>
-            </button>
+   
+    <div class="music-player">
+        <div class="audio">
+         <audio controls id="media" hidden>
+               <!--<source id="audio" src="" type="audio/mpeg">-->
+         </audio>
+         <input type="range" value="0" id="progress">
         </div>
-        <ul class="playlist-item">
-            <li>
-                <img src="" alt="">
-                <div class="music-info">
-                    <p class="song-name">name music</p>
-                    <p class="artist-name">artist name</p>
+        <div class="players-controls">
+            <div id="song-details" class="current-song-info">
+                <img src="./media/default_img.jpg" alt="Album Art">
+                <div class="song-text">
+                    <p class="song-name" id="title-small">Blinding Lights</p>
+                    <p class="artist-name" id="artist-small">The Weeknd</p>
                 </div>
-            </li>
-        </ul>
-    </aside>  
+            </div>
+            <div class="song-controls">
+               <button id="lastest" aria-label="Canción anterior">
+                 <i class="fa-solid fa-backward-step"></i>
+               </button>
+               <button id="play" class="play" aria-label="Reproducir/Pausar">
+                 <i class="fa-solid fa-pause"></i>
+               </button>
+               <button id="forward" aria-label="Siguiente canción">
+                  <i class="fa-solid fa-forward-step"></i>
+               </button>
+            </div>
+            <div class="extra-controls">
+                <button class="control-btn" aria-label="Cola de reproducción">
+                    <i class="fa-solid fa-list"></i>
+                </button>
+                <button class="control-btn" aria-label="Volumen">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
+            </div>
+        </div>  
+    </div>
 </body>
 </html>
